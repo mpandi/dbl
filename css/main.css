@@ -1,0 +1,166 @@
+body {
+    background: url("../images/body-bg.png");
+    color: #333333;
+    font-family: "Open Sans Condensed", Arial, sans-serif;
+    font-size: 13px;
+} 
+.all{
+  margin: auto;
+  padding: 0; 
+  width: 95%; 
+  -moz-box-shadow:    -3px 3px 5px 3px #bbb;
+  -webkit-box-shadow: -3px 3px 5px 3px #bbb;
+  box-shadow:         -3px 3px 5px 3px #bbb;
+}
+.work{
+  margin: auto;
+  padding: 0; 
+  width: 90%; 
+  -moz-box-shadow:    -3px 3px 5px 3px #bbb;
+  -webkit-box-shadow: -3px 3px 5px 3px #bbb;
+  box-shadow:         -3px 3px 5px 3px #bbb;
+}
+.header{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: white;
+    height: auto;
+}
+.header-logo {
+    float: left;
+}
+.header-links span, .header-links a {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 32px;
+}
+img{
+  max-width: 98%;
+  height: auto;
+}
+#main {
+    display: -webkit-flex; /* Safari */
+    display: flex;
+}
+#main div {
+    -webkit-flex: 1;  /* Safari 6.1+ */
+    -ms-flex: 1;  /* IE 10 */    
+    flex: 1;
+}
+.search-box, .desktop-cart {
+    float: right;
+    font-size: 0;
+}
+.topic-block-title {
+    padding-left: 10px;
+}
+.topic-block-title h2 {
+    display: inline-block;
+    position: relative;
+    color: orange;
+    font-size: 40px;
+    font-weight: normal;
+    font-family: 'Lobster Two', cursive;
+}
+.partner{
+    border: 1px solid #E5E4E2;
+    height: 150px;
+    background-color: white;
+    padding: 5px;
+}
+.partner:hover{
+    border-color: gray;
+    -moz-box-shadow:    -3px 3px 5px 3px #bbb;
+    -webkit-box-shadow: -3px 3px 5px 3px #bbb;
+    box-shadow:         -3px 3px 5px 3px #bbb;
+   
+}
+.topic-block-title h3 {
+    display: inline-block;
+    position: relative;
+    color: orange;
+    font-weight: normal;
+    font-family: 'Lobster Two', cursive;
+}
+.ajax-cart-button-wrapper input[type="text"], .ajax-cart-button-wrapper select {
+    text-align: center;
+    width: 31px;
+    height: 20px;
+    margin-top: 0;
+    margin-right: -1px;
+    border-color: #969696;
+}
+.login_content form {
+    margin: 20px 0;
+    position: relative;
+}
+
+.login_d {
+    padding: 12px 24px;
+}
+
+.login_content form div a {
+    font-size: 15px;
+    margin: 10px 15px 0 0;
+}
+.inputs.reversed span.forgot-password {
+    width: auto;
+    display: inline-block;
+    margin: 0 0 0 50px;
+}
+.shadow{
+     box-shadow:0px -5px 5px #555;
+	-moz-box-shadow:0px -5px 5px #555;
+	-webkit-box-shadow:0px -5px 5px #555;
+    padding-top: 5px;
+    background-color: white;
+    border-bottom: 2px solid black;
+}
+.shadows{
+     box-shadow:0px 5px 5px #555;
+	-moz-box-shadow:0px 5px 5px #555;
+	-webkit-box-shadow:0px 5px 5px #555;
+    background-color: #5EFB6E;
+}
+.shadows a {
+    color:white;
+}
+#contactForm form input.text, #contactForm form textarea{
+    width: 100%;
+    color: black;
+    font-size: 1em;
+}
+a:hover{
+    text-decoration: none;
+}
+
+textarea{
+    resize: none;
+}
+ul li a:hover{
+    color: orange;
+}
+ul{
+    list-style-type: none;
+    margin:0 auto;
+    padding:5px 0px;
+    display:inline;
+}
+ul.navigation li{
+    display:inline;
+    padding-right: 15px;
+    margin: auto;
+}
+ul.navigation li a{
+    color: black;
+    font-size: 1.4em;
+}
+ul.navigation li a:hover{
+   text-decoration: none;
+   color: orange;
+   font-size: 1.1em;
+}
+ul.navigation li a.active{
+   color: orange;
+}
+
