@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 include 'header.php'; 
 ?>
 <body class="hold-transition skin-blue sidebar-mini">
-  <div class="content-wrapper">         
+  <div class="container" style="padding:40px 15px;">         
       <div class="row">
         <div class="col-lg-3">
          <form class='' method="POST" action="<?php echo base_url();?>dashboard">
