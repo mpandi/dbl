@@ -80,16 +80,16 @@ font-size: 17px;
       </div>
       <div class="row">
         <div class="col-lg-4 col-lg-offset-4 col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 form-widget">
-         <form class='' method="POST" action="<?php echo base_url();?>dashboard">
+         <form class='' method="POST" action="<?php echo base_url();?>forgot/retrieve">
             <?php     
             if(isset($error_message)){
                 echo "<div class='alert alert-danger'>";
                 echo $error_message;
                 echo "</div>";
                 }
-            if(isset($logout_message)){
+            if(isset($success_message)){
                 echo "<div class='alert alert-success'>";
-                echo $logout_message;
+                echo $success_message;
                 echo "</div>";
               } ?>
            <div class="el-form-item"><label for="email">Email</label>
@@ -97,12 +97,10 @@ font-size: 17px;
            <div class="el-input"><input id="email" type="email" name="email" required=""/></div>
           </div>
           </div> 
-
-
-                <button type="submit" class="btn greenish btn-block p-x-md"><span class="pull-right hidden">
-                <i class="material-icons loader">?</i></span> <span class="clear">Sign in</span></button></form>
-                <br/>
-        <p>Remember password? <a href="#">Login Here</a></p>      
+        <button type="submit" class="btn greenish btn-block p-x-md"><span class="pull-right hidden">
+        <i class="material-icons loader">?</i></span> <span class="clear">Reset</span></button></form>
+        <br/>
+        <p>Remember password? <a href="<?php echo base_url();?>">Login Here</a></p>      
         </div> 
 
       </div>

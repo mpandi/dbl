@@ -110,7 +110,7 @@ font-size: 17px;
                 <button type="submit" class="btn greenish btn-block p-x-md"><span class="pull-right hidden">
                 <i class="material-icons loader">?</i></span> <span class="clear">Sign in</span></button></form>
                 <br/>
-        <p>Forgot password? <a href="#">Click Here</a></p>      
+        <p>Forgot password? <a href="<?php echo base_url();?>forgot">Click Here</a></p>      
         </div> 
 
       </div>

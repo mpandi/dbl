@@ -1,38 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 class Users extends CI_Model {
-// Insert registration data in database
-public function insert($data){
-  if($this->check_email($data['email']) == true){
-    return "Email exists";
-  }
-  if($this->check_product_id($data['product_id']) == true){
-    return "Inmate ID exists";
-  }
-  else{
-    $this->db->insert('products',$data);
-    if($this->db->affected_rows() > 0){
-        return $this->db->insert_id();
-      }
-    else{
-        return "failed";
-      }
-     }
-}
-public function insert_subscription($data){
-  if($this->check_email_subscribed($data['email']) == true){
-    return "Email exists";
-  }
-  else{
-    $this->db->insert('subscriptions',$data);
-    if($this->db->affected_rows() > 0){
-        return "success";
-      }
-    else{
-        return "failed";
-      }
-    }
-}
 public function signup($data){
   if($this->check_user_email($data['email']) == true){
     return "Email exists";
@@ -58,9 +26,9 @@ public function fetch_name($id){
     else return "No name";
 }
 
-private function check_email($email){
+public function check_email($email){
     $this->db->select('*');
-    $this->db->from('users');
+    $this->db->from('logins');
     $this->db->where('email=', $email);
     $query = $this->db->get();
     if($query->num_rows() > 0){
